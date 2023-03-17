@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "appointmet-app-91fac": {
+      "hosting": {
+        "appointment-front": [
+          "appointmet-app-91fac"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "appointmet-app-91fac"
+  }
+}

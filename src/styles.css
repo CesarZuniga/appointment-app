@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ngx-toastr/toastr';
+
+body{
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+	background: linear-gradient(to bottom, white, pink, #302b63);
+}
+.error{
+  justify-content: center;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+.error span{
+  color: red;
+  position: absolute;
+    margin-top: -15px;
+}

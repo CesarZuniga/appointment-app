@@ -1,0 +1,29 @@
+
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="login">
+      <form [formGroup]="formLogin">
+        <label for="chk" aria-hidden="true">Iniciar Sesión</label>
+        <input type="email" formControlName="email" placeholder="Correo" appFormControlValidationMsg validationMsgId="email" >
+        <input type="password" formControlName="password"  appFormControlValidationMsg validationMsgId="password" placeholder="Contraseña">
+        <button (click)="loginEmail()" appFormSubmitValidationMsg [validationControl]="formLogin">Iniciar sesión</button>
+      </form>
+      <div class="social-login">
+        <h4>Inicio de sesión via</h4>
+        <div class="social-icons">
+          <a (click)="loginGoogle()" class="social-login__icon fab fa-google"></a>
+          <a (click)="loginFacebook()" class="social-login__icon fab fa-facebook"></a>
+          <!-- <a (click)="loginTwitter()" class="social-login__icon fab fa-twitter"></a> -->
+        </div>
+      </div>
+    </div>
+    <div class="signup">
+      <form [formGroup]="formSigup">
+        <label for="chk" aria-hidden="true">Registro</label>
+        <input type="text" formControlName="name"  placeholder="Nombre" appFormControlValidationMsg validationMsgId="name" >
+        <input type="email" formControlName="email" placeholder="Correo" appFormControlValidationMsg validationMsgId="email" >
+        <input type="password" formControlName="password" appFormControlValidationMsg validationMsgId="password" placeholder="Contraseña">
+        <button (click)="sigup()" appFormSubmitValidationMsg [validationControl]="formSigup">Registar</button>
+      </form>
+    </div>
+  </div>
